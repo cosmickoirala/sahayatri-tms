@@ -1,0 +1,122 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model TravelManagementSystem.ViewModels.UserModel;
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+@{
+    ViewData["Title"] = "Add Business";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+
+</style>
+
+<!-- Page Content -->
+<div class="cosmic">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-content">
+                    <div class="container mt-5 mb-5">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 col-lg-4">
+                                @if (string.IsNullOrEmpty(Model.ProfileImage))
+                                {
+                                    <img src="~/assets/images/profileImage.jpg" alt="Profile picture" class="profile-picture">
+                                }
+                                else
+                                {
+                                    <img src="~/@Model.ProfileImage" alt="Profile picture" class="profile-picture">
+                                }
+                            </div>
+                            <div class="col-md-8 col-lg-8" style="padding: 50px;">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-row justify-content-between align-items-center p-5 bg-dark text-white">
+                                        <h3 class="display-5">@Model.Name <span class="text-success">(@Model.UserRole)</span> </h3><i class="fa fa-facebook"></i><i class="fa fa-google"></i><i class="fa fa-youtube-play"></i><i class="fa fa-dribbble"></i><i class="fa fa-linkedin"></i>
+                                    </div>
+                                    <div class="p-3 bg-black text-white">
+                                        <h6 class="text-primary">Sahatyatri Developer</h6>
+                                    </div>
+                                    <div class="d-flex flex-row text-white">
+                                        <div class="p-4 bg-primary text-center skill-block">
+                                            <h4>14</h4>
+                                            <h6>Places</h6>
+                                        </div>
+                                        <div class="p-3 bg-success text-center skill-block">
+                                            <h4>3</h4>
+                                            <h6>Businesses</h6>
+                                        </div>
+                                        <div class="p-3 bg-warning text-center skill-block">
+                                            <h4>17</h4>
+                                            <h6>Reviews</h6>
+                                        </div>
+                                        <div class="p-3 bg-danger text-center skill-block">
+                                            <h4>3</h4>
+                                            <h6>Wishlist</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @if(Model.UserRole.Trim().ToUpper()=="ADMIN")
+                {
+                <div class="row addbuttons">
+                    <div class="col-md-2">
+                        <a asp-action="AddPlace" asp-controller="Place" class="filled-button">Add Place</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a asp-action="AddCountry" asp-controller="Place" class="filled-button">Add Country</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a asp-action="AddState" asp-controller="Place" class="filled-button">Add State</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a asp-action="AddCity" asp-controller="Place" class="filled-button">Add City</a>
+                    </div>
+                    <div class="col-md-2">
+                        <a asp-action="AddAdmin" asp-controller="Account" class="filled-button">Add Admin</a>
+                    </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-md-2">
+                        <a asp-action="AddPlace" asp-controller="Place" class="filled-button">Add Place</a>
+                    </div>
+                    
+                }
+                <div class="latest-products">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section-heading">
+                                    <h2>My Places</h2>
+                                    <a asp-action="ViewWishList" asp-controller="Account">view Wishlist <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            @foreach(var place in @Model.Places)
+                            {
+                               <div class="col-md-4">
+                                <div class="product-item">
+                                    <img src="~/@place.CoverImagePath" alt="@place.Name">
+                                    <div class="down-content">
+                                        <h4>@place.Name</h4>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            }
+                           
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

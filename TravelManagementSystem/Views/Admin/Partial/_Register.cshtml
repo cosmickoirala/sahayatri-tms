@@ -1,0 +1,39 @@
+﻿@model TravelManagementSystem.ViewModels.LoginAndRegistrationCommon
+
+
+<div class="form-container sign-up-container" href="#signup">
+    <form method="POST" asp-controller="Account" asp-action="RegisterUser">
+        @if (Model.RegistrationViewModel.UserType != null)
+        {
+            <h1>Create @Model.RegistrationViewModel.UserType Account</h1>
+        }
+        else
+        {
+            <h1>Create Account</h1>
+        }
+
+        <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <span>Use username or  your email for registration</span><br />
+        @if (TempData["SignUPError"] != null)
+        {
+            <span class="text-danger font-weight-bold">@TempData["SignUPError"] </span>
+        }
+        <input asp-for="RegistrationViewModel.UserType" type="hidden" />
+        <input asp-for="RegistrationViewModel.Email" placeholder="Email" />
+        <span asp-validation-for="RegistrationViewModel.Email"></span>
+
+        <input asp-for="RegistrationViewModel.Username" placeholder="Username" />
+        <span asp-validation-for="RegistrationViewModel.Email"></span>
+
+        <input asp-for="RegistrationViewModel.Password" placeholder="Password" type="password" />
+        <span asp-validation-for="RegistrationViewModel.Password"></span>
+
+        <input asp-for="RegistrationViewModel.ConfirmPassword" placeholder="Confirm Password" type="password"/>
+        <span asp-validation-for="RegistrationViewModel.ConfirmPassword"></span>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>

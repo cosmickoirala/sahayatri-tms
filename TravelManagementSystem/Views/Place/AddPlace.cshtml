@@ -1,0 +1,208 @@
+﻿@model TravelManagementSystem.ViewModels.PlaceModel;
+@{
+    ViewData["Title"] = "Places Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Page Content -->
+<style>
+    .checkboxDiv{
+        display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+</style>
+<div class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>Add Your Business</h2>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="contact-form">
+                    <form id="contact" asp-action="AddPlace" asp-controller="Place" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 fields">
+                                <fieldset>
+                                    <label asp-for="Name"></label>
+                                    <input name="name" asp-for="Name" type="text" class="form-control" id="name" placeholder="Place Name">
+                                    <span asp-validation-for="Name"></span>
+                                </fieldset>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 fields">
+
+                                <fieldset>
+                                    <label for="title"><span>Country</span></label>
+                                    <select asp-for="CountryId" type="text" name="CountryId" id="title" class="form-control">
+                                        @if (Model.CityList.Count != 0)
+                                        {
+                                            foreach (var country in Model.CountryList)
+                                            {
+                                                <option value="@country.Value">@country.Text</option>
+                                            }
+                                        }
+
+                                    </select>
+                                    <span asp-validation-for="CountryId"></span>
+                                </fieldset>
+                            </div>
+                            <br />
+                            <div class="col-lg-6 col-md-6 col-sm-6 fields">
+                                <fieldset>
+                                    <label for="title"><span>Located State</span></label>
+                                    <select asp-for="StateId" type="text" name="StateId" id="title" class="form-control">
+                                        @if (Model.CityList.Count != 0)
+                                        {
+                                            foreach (var state in Model.StateList)
+                                            {
+                                                <option value="@state.Value">@state.Text</option>
+                                            }
+                                        }
+
+                                    </select>
+                                    <span asp-validation-for="StateId"></span>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 fields">
+                                <fieldset>
+                                    <label for="title"><span>located city</span></label>
+                                    <Select asp-for="CityId" type="text" id="CityId" class="form-control">
+                                        @if (Model.CityList.Count != 0)
+                                        {
+                                            foreach (var city in Model.CityList)
+                                            {
+                                                <option value="@city.Value">@city.Text</option>
+                                            }
+                                        }
+
+                                    </Select>
+                                    <span asp-validation-for="CityId"></span>
+                                </fieldset>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 fields">
+                                <fieldset>
+                                    <label for="title"><span>Place Type</span></label>
+                                    <Select asp-for="PlaceType" type="text" id="placeType" class="form-control">
+                                        @if (Model.CityList.Count != 0)
+                                        {
+                                            foreach (var city in Model.PlaceTypeList)
+                                            {
+                                                <option value="@city.Value">@city.Text</option>
+                                            }
+                                        }
+
+                                    </Select>
+                                    <span asp-validation-for="PlaceType"></span>
+                                </fieldset>
+
+                            </div>
+                            <br />
+                            <br />
+
+                            <div class="col-lg-12 fields">
+                                <fieldset>
+                                    <label for="title"><span>Add Description</span></label>
+                                    <textarea asp-for="Description" rows="8" class="form-control" id="message" placeholder="Description" required=""></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="ml-4 col-sm-6 fields .checkboxDiv">
+                                <label asp-for="IsVisited"></label>
+                                <label class="switch">
+                                    <input type="checkbox" asp-for="IsVisited">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+
+                            <div class="ml-2 col-sm-6 fields">
+                                <label for="title"><span>Cover Image</span></label>
+                                <div id="msg"></div>
+                                <input asp-for="CoverImage" type="file" name="CoverImage" id="CoverImage" class="file" accept="image/*" hidden>
+                                <div class="input-group my-3">
+                                    <input type="text" class="form-control" disabled placeholder="Upload Cover Image" id="file">
+                                    <div class="input-group-append">
+                                        <button type="button" class="cover filled-button">Browse...</button>
+                                    </div>
+                                </div>
+                                <span asp-validation-for="CoverImage"></span>
+                            </div>
+
+                            <div class="ml-2 col-sm-6">
+                                <img src="https://placehold.it/80x80" id="preview" class="img-thumbnail">
+                            </div>
+
+
+
+                            <div class="ml-2 col-sm-6 fields">
+                                <label for="title"><span>Other Images </span></label>
+                                <div id="msg"></div>
+                                <input asp-for="Images" type="file" id="upload_files" name="Images" onchange="preview_image();" multiple hidden/>
+                                <div class="input-group my-3">
+                                    <input type="text" class="form-control" disabled placeholder="Upload mutiple images" id="files">
+                                    <div class="input-group-append">
+                                        <button type="button" class="All-Images filled-button">Browse...</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" id="listPreviews">
+                                
+                            </div>
+
+
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="filled-button">Add Place</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+@section scripts{
+<script type="text/javascript">
+        $(document).on("click", ".cover", function() {
+      var file = $(this).parents().find(".file");
+      file.trigger("click");
+    });
+    $('.file').change(function(e) {
+      var fileName = e.target.files[0].name;
+      $("#file").val(fileName);
+
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        // get loaded data and render thumbnail.
+        document.getElementById("preview").src = e.target.result;
+      };
+      // read the image file as a data URL.
+      reader.readAsDataURL(this.files[0]);
+    });
+
+
+     $(document).on("click", ".All-Images", function() {
+      var files = $(this).parents().find("#upload_files");
+      files.trigger("click");
+    });
+   
+function preview_image() 
+{
+    var FileNames="";
+ var total_file=document.getElementById("upload_files").files.length;
+ for(var i=0;i<total_file;i++)
+ {
+  $('#listPreviews').append('<div class="ml-2 col-md-4"><img src="'+URL.createObjectURL(event.target.files[i])+'" class="img-thumbnail" style="heignt:234px;widht:135px"></div>');
+    FileNames+=event.target.files[i].name+",";
+ }
+   $("#files").val(fileName);
+}
+
+</script>
+}

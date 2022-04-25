@@ -1,0 +1,288 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TravelManagementSystem
+build_property.RootNamespace = TravelManagementSystem
+build_property.ProjectDir = f:\PROJECT\Sahayatri\TravelManagementSystem\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = f:\PROJECT\Sahayatri\TravelManagementSystem
+build_property._RazorSourceGeneratorDebug = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Account/AddAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Account/AddBusiness.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGRCdXNpbmVzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Account/Partial/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQYXJ0aWFsXF9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Account/Partial/_Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQYXJ0aWFsXF9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Account/ProfileView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Account/Welcome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxXZWxjb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Icons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSWNvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Maps.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Partial/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydGlhbFxfTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Partial/_Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydGlhbFxfUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Status404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3RhdHVzNDA0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Status4xx.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3RhdHVzNHh4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Admin/Tables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGFibGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Home/Status404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGF0dXM0MDQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Home/Status4xx.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGF0dXM0eHguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Place/AddCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VcQWRkQ2l0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Place/AddCountry.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VcQWRkQ291bnRyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Place/AddPlace.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VcQWRkUGxhY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Place/AddState.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VcQWRkU3RhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Place/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Place/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Place/Rate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VcUmF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Place/Recomended.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VcUmVjb21lbmRlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Place/Review.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2VcUmV2aWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/Auth/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEF1dGhcX0Zvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/Auth/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEF1dGhcX0hlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/Auth/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEF1dGhcX05hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/Topnav/_CurrentUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRvcG5hdlxfQ3VycmVudFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/Topnav/_Dropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRvcG5hdlxfRHJvcGRvd24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/Topnav/_Links.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRvcG5hdlxfTGlua3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/Topnav/_Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRvcG5hdlxfU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/Topnav/_Topnav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRvcG5hdlxfVG9wbmF2LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/Topnav/_TopnavProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRvcG5hdlxfVG9wbmF2UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_Breadcrumbs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CcmVhZGNydW1icy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_CookieConsentPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db29raWVDb25zZW50UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_Dropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ecm9wZG93bi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_ExternalScripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FeHRlcm5hbFNjcmlwdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_GoogleTagManagerBodyElement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Hb29nbGVUYWdNYW5hZ2VyQm9keUVsZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_IdentityLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JZGVudGl0eUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_LayoutProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_MessagePopUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZXNzYWdlUG9wVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_NavbarUserInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXJVc2VySW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_OpenGraph.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PcGVuR3JhcGguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_PageHeadElement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QYWdlSGVhZEVsZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_Sidenav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlbmF2LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_ThemeScripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UaGVtZVNjcmlwdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_ThemeStyles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UaGVtZVN0eWxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[f:/PROJECT/Sahayatri/TravelManagementSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

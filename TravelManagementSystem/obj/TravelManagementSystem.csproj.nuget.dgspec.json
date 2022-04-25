@@ -1,0 +1,110 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\PROJECT\\Sahayatri\\TravelManagementSystem\\TravelManagementSystem.csproj": {}
+  },
+  "projects": {
+    "F:\\PROJECT\\Sahayatri\\TravelManagementSystem\\TravelManagementSystem.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\PROJECT\\Sahayatri\\TravelManagementSystem\\TravelManagementSystem.csproj",
+        "projectName": "TravelManagementSystem",
+        "projectPath": "F:\\PROJECT\\Sahayatri\\TravelManagementSystem\\TravelManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\Cosmic\\.nuget\\packages\\",
+        "outputPath": "F:\\PROJECT\\Sahayatri\\TravelManagementSystem\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Cosmic\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\PROJECT\\Sahayatri\\User Behavior\\Recommender.csproj": {
+                "projectPath": "F:\\PROJECT\\Sahayatri\\User Behavior\\Recommender.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\PROJECT\\Sahayatri\\User Behavior\\Recommender.csproj": {
+      "restore": {
+        "projectUniqueName": "F:\\PROJECT\\Sahayatri\\User Behavior\\Recommender.csproj",
+        "projectName": "Recommender",
+        "projectPath": "F:\\PROJECT\\Sahayatri\\User Behavior\\Recommender.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
+      }
+    }
+  }
+}

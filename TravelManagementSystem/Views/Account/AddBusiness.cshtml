@@ -1,0 +1,140 @@
+﻿@model TravelManagementSystem.ViewModels.BusinessModel;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Add Business";
+}
+<style>
+    input#file-upload-button {
+        color: black;
+    }
+</style>
+
+<!-- Page Content -->
+<div class="send-message">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>Add Your Business</h2>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="contact-form">
+                    <form id="contact" asp-action="AddBusiness" asp-controller="Account" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <label asp-for="Name"></label>
+                                    <input name="name" asp-for="Name" type="text" class="form-control" id="name" placeholder="Full Name of Business">
+                                    <span asp-validation-for="Name"></span>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+
+                                <fieldset>
+                                    <label for="title"><span>Business Type</span></label>
+                                    <select asp-for="BusinessType" type="text" name="BusinessType" id="title" class="form-control">
+                                        <option value="Type">--Select Business Type--</option>
+                                        <option value="Hotel"> Hotel</option>
+                                        <option value="Resturant"> Resturant</option>
+                                        <option value="Entetainment"> Entertainment</option>
+                                        <option value="Paragliding"> Paragliding</option>
+                                    </select>
+                                    <span asp-validation-for="BusinessType"></span>
+                                </fieldset>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+
+                                <fieldset>
+                                    <label for="title"><span>Located Country</span></label>
+                                    <select asp-for="CountryId" type="text" name="CountryId" id="title" class="form-control">
+                                        @if (Model.CityList.Count != 0)
+                                        {
+                                            foreach (var country in Model.CountryList)
+                                            {
+                                                <option value="@country.Value">@country.Text</option>
+                                            }
+                                        }
+
+                                    </select>
+                                    <span asp-validation-for="CountryId"></span>
+                                </fieldset>
+                            </div>
+                            <br />
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <fieldset>
+                                    <label for="title"><span>Located State</span></label>
+                                    <select asp-for="StateId" type="text" name="StateId" id="title" class="form-control">
+                                        @if (Model.CityList.Count != 0)
+                                        {
+                                            foreach (var state in Model.StateList)
+                                            {
+                                                <option value="@state.Value">@state.Text</option>
+                                            }
+                                        }
+
+                                    </select>
+                                    <span asp-validation-for="StateId"></span>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <fieldset>
+                                    <label for="title"><span>located city</span></label>
+                                    <Select asp-for="CityId" type="text" id="CityName" class="form-control">
+                                        @if (Model.CityList.Count != 0)
+                                        {
+                                            foreach (var city in Model.CityList)
+                                            {
+                                                <option value="@city.Value">@city.Text</option>
+                                            }
+                                        }
+
+                                    </Select>
+                                    <span asp-validation-for="CityId"></span>
+                                </fieldset>
+
+                            </div>
+                            <br />
+                            <br />
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <label for="title"><span>Title</span></label>
+                                    <input name="subject" type="text" class="form-control" id="subject" placeholder="Title/Motto Of your Business" required="">
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <textarea asp-for="Description" rows="8" class="form-control" id="message" placeholder="Description" required=""></textarea>
+                                </fieldset>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <label for="title"><span>Select Logo for Your Business</span></label>
+                                    <input asp-for="Logo" type="file" name="logo" class="logofield">
+                                </fieldset>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <label for="title"><span>Select Images for Your Business</span></label>
+                                    <input asp-for="Images" type="file" name="Images" class="logofield" multiple class="filled-button">
+                                </fieldset>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

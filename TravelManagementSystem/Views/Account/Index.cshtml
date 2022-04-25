@@ -1,0 +1,52 @@
+﻿@model TravelManagementSystem.ViewModels.LoginAndRegistrationCommon
+@{
+
+    ViewData["Title"] = "SignIn/SignUp ";
+}
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/style.css" />
+<style>
+    #container {
+        height: 90%;
+        width: 70%;
+    }
+</style>
+
+
+<div style="height:100vh; padding:120px 0px 100px 0px; margin-bottom:50px;">
+    <div class="container container-registerPage" id="container">
+
+
+        <partial name="Partial/_Login.cshtml" model="@Model" />
+        <partial name="Partial/_Register.cshtml" model="@Model" />
+
+        <div class="overlay-container">
+
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<script src="~/js/script.js"></script>
+}
+
+
+
+

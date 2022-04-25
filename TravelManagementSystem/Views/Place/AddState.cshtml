@@ -1,0 +1,87 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model TravelManagementSystem.ViewModels.PlaceModel;
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@{
+    ViewData["Title"] = "Add Country";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+  @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+     {
+<!-- Page Content -->
+ <div class="send-message">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>Add Country</h2>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="contact-form">
+                    <form id="contact" asp-action="AddState" asp-controller="Place" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6">
+
+                                <fieldset>
+                                    <label for="title"><span>Country</span></label>
+                                    <select asp-for="CountryId" type="text" name="CountryId" id="title" class="form-control">
+                                        @if (Model.CityList.Count != 0)
+                                        {
+                                            foreach (var country in Model.CountryList)
+                                            {
+                                                <option value="@country.Value">@country.Text</option>
+                                            }
+                                        }
+
+                                    </select>
+                                    <span asp-validation-for="CountryId"></span>
+                                </fieldset>
+                            </div>
+                            <br />
+
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <fieldset>
+                                    <label asp-for="StateId"></label>
+                                    <input name="StateId" asp-for="StateId" type="text" class="form-control" id="name" placeholder="State Name"/>
+                                    <span asp-validation-for="StateId"></span>
+                                </fieldset>
+                            </div>
+
+                  
+                            <br />
+                            <br />
+ 
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <label asp-for="Description"></label>
+                                    <textarea asp-for="Description" rows="8" class="form-control" id="message" placeholder="Description" required=""></textarea>
+                                </fieldset>
+                            </div>
+
+
+                           <div class="col-lg-12">
+                                <fieldset>
+                                    <label for="title"><span>Select Images for State</span></label>
+                                    <input asp-for="Images" type="file" name="Images" class="ImageField" multiple class="filled-button">
+                                </fieldset>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="filled-button">Add State</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+}
+else
+{
+    <h1 class="text-danger"> You are not authorized !!! </h1>
+}

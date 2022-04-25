@@ -1,0 +1,8 @@
+F:\PROJECT\Sahayatri\User Behavior\bin\Debug\ScottClayton.Recommendation.dll
+F:\PROJECT\Sahayatri\User Behavior\bin\Debug\ScottClayton.Recommendation.pdb
+F:\PROJECT\Sahayatri\User Behavior\obj\Debug\Recommender.csproj.AssemblyReference.cache
+F:\PROJECT\Sahayatri\User Behavior\obj\Debug\UserBehavior.Properties.Resources.resources
+F:\PROJECT\Sahayatri\User Behavior\obj\Debug\Recommender.csproj.GenerateResource.cache
+F:\PROJECT\Sahayatri\User Behavior\obj\Debug\Recommender.csproj.CoreCompileInputs.cache
+F:\PROJECT\Sahayatri\User Behavior\obj\Debug\ScottClayton.Recommendation.dll
+F:\PROJECT\Sahayatri\User Behavior\obj\Debug\ScottClayton.Recommendation.pdb

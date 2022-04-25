@@ -1,0 +1,77 @@
+﻿@model List<TravelManagementSystem.ViewModels.PlaceModel>
+@{
+    ViewData["Title"] = "Places Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!-- Page Content -->
+
+
+
+
+<div class="page-heading products-heading header-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-content">
+                    <h2>six major places for now</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="filters">
+                    <ul>
+                        <li data-filter=".des">Recomended</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="filters-content">
+                    <div class="row grid">
+
+
+
+                        @if (Model != null)
+                        {
+                            foreach (var place in Model)
+                            {
+                                <div class="col-lg-4 col-md-4 all des">
+                                    <div class="product-item">
+                                        <a href="/place/detail?@place.Id"><img src="~/@place.CoverImagePath" alt=""></a>
+                                        <div class="down-content">
+                                            <a asp-action="Detail" asp-controller="Place" asp-route-id="@place.Id"><h4>@place.Name</h4></a>
+                                            <p>@place.Description</p>
+                                            <p>@place.Title</p>
+                                            <ul class="stars">
+                                                @Html.Raw(place.Rating)
+                                            </ul>
+
+                                            <span><a asp-action="Detail" asp-controller="Place" asp-route-id="@place.Id">Details</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                        }
+                        else
+                        {
+                            <h1>Some thing went wrong!!!!</h1>
+                        }
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

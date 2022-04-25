@@ -1,0 +1,95 @@
+﻿@model List<TravelManagementSystem.ViewModels.PlaceModel>
+@using Microsoft.AspNetCore.Identity
+@using TravelManagementSystem.Models
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+@{
+    ViewData["Title"] = "Places Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<!-- Page Content -->
+
+
+
+
+<div class="page-heading products-heading header-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-content">
+                    <h2>six major places for now</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="products">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="filters">
+              <ul>
+                  <li class="active" data-filter="*">All Places</li>
+                  <li data-filter=".des">Featured</li>
+                  <li data-filter=".dev">Mostly Viewed</li>
+                  <li data-filter=".gra">Underrated</li>
+                          @if (SignInManager.IsSignedIn(User))
+{
+                  <li data-filter=""><a asp-action="Recomended" asp-controller="Place">Recomended</a></li>
+}
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="filters-content">
+
+            <div class="row grid">
+                            @if (Model != null)
+                            {
+                                @if (Model.Count > 0)
+                                {
+                                    foreach (var place in Model)
+                                    {
+                                        <div class="col-lg-4 col-md-4 all des">
+                                            <div class="product-item">
+                                                <a href="place/detail?@place.Id"><img src="~/@place.CoverImagePath" alt=""></a>
+                                                <div class="down-content">
+                                                     <a asp-action="Detail" asp-controller="Place" asp-route-id="@place.Id"><h4>@place.Name</h4></a>
+                                                    <p>@place.Description</p>
+                                                    <ul class="stars">
+                                                     @Html.Raw(@place.Rating)
+                                                    </ul>
+                                            <span><a asp-action="Detail" asp-controller="Place" asp-route-id="@place.Id">Details</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    <div class="col-md-2">
+                                        <a asp-action="AddPlace" asp-controller="Place" class="filled-button">Add Place</a>
+                                    </div>
+                                }
+                            }
+
+                            else
+                            {
+                                <h1> No Places to show . Add a place You Know or visited!!!</h1> 
+                                <div class="col-md-2">
+                                    <a asp-action="AddPlace" asp-controller="Place" class="filled-button">Add Place</a>
+                                </div>
+                            }
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

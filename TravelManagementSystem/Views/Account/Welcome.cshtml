@@ -1,0 +1,80 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model TravelManagementSystem.ViewModels.UserModel;
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+@{
+    ViewData["Title"] = "Add Business";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .cardpage {
+        padding: 100px;
+    }
+</style>
+
+<div class="cardpage">
+    <div class="container">
+        <div class="row">
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+
+
+                <div class="card w-50 ">
+                    <div class="card-header">
+                        Welcome!!!!
+                    </div>
+                    <div class="card-body">
+                        @if (TempData["First"] != null)
+                        {
+                            <h5 class="card-title">Welcome @User.Identity.Name </h5>
+                        }
+                        else
+                        {
+                            <h5 class="card-title">Welcome Back @User.Identity.Name </h5>
+                        }
+
+
+                        <p class="card-text">Shahayatri your travel Companion!!! </p>
+                        <a asp-action="Index" asp-controller="Place"  class="filled-button">Start Your Journey!!!</a>
+
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="card w-50">
+                    <div class="card-header text-primary">
+                        Welcome!!!!
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Welcome @User.Identity.Name </h5>
+
+                        <p class="card-text">Shahayatri your travel Companion!!! </p>
+                        <a asp-action="Index" asp-controller="Account" class="filled-button">Login to begin Your Journey!!!</a>
+
+                    </div>
+                </div>
+
+            }
+
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <div class="card w-50">
+                    <div class="card-header">
+                        Welcome!!!!
+                    </div>
+                    <div class="card-body">
+                        <h5>All Your Things Put Together</h5>
+                        <p class="card-text">Promote Your loaclity,Business,Culture, Share Your Experiences and do many more...!!! </p>
+                        <a asp-action="ProfileView" asp-controller="Account" class="filled-button">Profile</a>
+
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
